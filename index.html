@@ -10,10 +10,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button onclick="window.location.href='#section1'" class="scroll-up">scroll-up</button>
+    <button onclick="window.location.href='#crispu'" class="scroll-down">Scroll-down</button>
     <script src="script.js"></script>
-    <audio class="audio" src="/music/beautiful-loop-253269" hidden autoplay loop></audio>
-
-    <div class="optional-container">
+    <audio class="audio" src="/music/beautiful-loop-253269." hidden autoplay loop></audio>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="./videos/backfround-vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div id="section1" class="optional-container">
         <h4>Pick your choice?</h4>
         <img src="/gifs/giphy.gif"Optional Choice">
     </div>
@@ -25,7 +32,7 @@
         <button>Night dinner</button>
         <button>Surprise</button>
         <button>Enthralling gifts</button>
-        <button>Shopping streak</button>
+        <button>Shopping</button>
         <button>Dance off</button>
         <button>Movie</button>
         <button>Customize</button>
@@ -37,11 +44,14 @@
             <div class="spinnerin"><i class="heart-in-circle">❤︎</i></div>
         </div>
     </div>
-
+<div class="dip-n-me-container"> <img src="./images/pngs/Adobe Express - file.png" alt="img here" class="dip-n-me-blue">
+ <img src="./images/pngs/goabeach.png" alt="img here" class="dip-n-me-blue"> </div>
+ <img src="./images/pngs/musicband.png" alt="img here" class="dip-n-me-blue"> </div>
     <div class="outter-box">
-        <h1>Ignore Cripu, he's just running here and there</h1>
+        <h1 id="crispu">Ignore Cripu, he's just running here and there</h1>
         <div class="moving-box">
             <img id="crispy-move" src="./images/crispy-move.ico" alt="Crispy Moving">
+
         </div>
     </div>
 

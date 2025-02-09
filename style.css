@@ -1,7 +1,8 @@
 
 /*main color to be used : #c13399 pink and the side color :ac28be */
 *{
-    background-color: #2d28be;
+
+  background: linear-gradient(45deg, #c13399, #ac28be);
 }
 body{
     overflow-x:  hidden;
@@ -10,6 +11,39 @@ body{
       font-weight: 900;
       font-style: italic;
 
+}
+
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Puts it behind content */
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  filter: blur(8px); /* Applies blur effect */
+}
+
+/* Content on Top */
+.content {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 20vh;
 }
 
 
@@ -26,22 +60,28 @@ body{
   justify-content: flex-start;
   width: 100vw; /* Full viewport width */
   height: max-content; /* Full viewport height */
+
 }
 
 .optional-container img {
   width: clamp(150px, 30vw,400px );
   height: auto;
+
 }
 
 .container h1 {
-  font-family: "poppins"
+  color: #7414a8;
+  font-family: "poppins";
+  font-weight : bold;
   font-size: clamp(20px, 5vw, 50px); /* Scales with viewport */
+
 }
 
 
 
 .main-btn-div{
 margin-top: 4%;
+
 }
 .main-btn-div button:hover{
   transform: scale(1.2,1.2);
@@ -53,12 +93,13 @@ button {
     border-radius: 30em;
     font-size: 15px;
     font-family: inherit;
+    font-weight : bold;
     border: none;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    box-shadow: 6px 6px 12px #000000,
-                -6px -6px 12px #64ce08;
+    box-shadow: 6px 6px 12px #6f0886,
+                -6px -6px 12px #FDF6F6;
     background-image: none;
     margin-bottom: 20px;
     transition: 1.5s;
@@ -167,7 +208,7 @@ button {
     border-radius: 50%;
     border: 2px solid #444;
     box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2, 10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px#ff5500, 0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
-    animation: rot55 2s linear infinite;
+    animation: rot55 4s linear infinite;
   }
 
   .spinnerin {
@@ -186,10 +227,10 @@ button {
       transform: rotate(0deg);
     }
     50% {
-      transform: rotate(90deg);
+      transform: rotate(180deg);
     }
     100% {
-      transform: rotate(0deg);
+      transform: rotate(360deg);
     }
 
   }
@@ -230,10 +271,58 @@ button {
       transform: scaleX(1); }
     100% { left: calc(100% - 100px);   transform: scaleX(-1); } /* Ensures it stops at the right edge */
   }
+.dip-n-me-container{
+ display: flex;
+margin-top: 8%;
+height: 60vh;
+width: calc(50%);
+object-fit: contain;
+background: linear-gradient(45deg, #c13399, #ac28be);
+}
+
+.dip-n-me-blue{
+height: 100%;
+width: 100%;
+background: linear-gradient(45deg, #c13399, #ac28be);
+
+
+}
+.dip-n-me-blue{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #c13399, #ac28be);
+
+
+  }
+
 
 #crispy-move{
 
   height: 90%;
   width: 90%;
   object-fit: fill;
+}
+.scroll-up, .scroll-down{
+position: sticky;
+right: 5%;
+background-color: #ff0b0b;
+border-radius: 10% 15%;
+}
+.scroll-down:hover{
+background-color: yellow;
+border-radius: 10% 15%;
+}
+
+
+
+.scroll-up{
+top:5%
+
+}
+.scroll-up{
+bottom: 5%;
+}
+#icon{
+  height:70%;
+  width: 60%;
 }
