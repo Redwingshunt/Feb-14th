@@ -364,6 +364,15 @@ transition: ease-in 2;
   width: 100%;
 }
 
+.now-biggest{
+  font-size: 3rem; font-weight: bolder;
+  margin-left: 25%;
+}
+.btns-customize{
+  display: flex;
+  justify-content: space-around;
+
+}
 
 .valentine-text {
   font-size: 7vw; /* 70% of screen width */
@@ -406,4 +415,13 @@ transition: ease-in 2;
   100% {
       transform: translateY(100vh) rotate(360deg);
   }
+}
+.video-main{
+  transition: 2s ease-in-out;
+}
+.video-main:hover{
+  filter: blur(0px);
+}
+.valentine-text{
+  margin: auto;
 }
