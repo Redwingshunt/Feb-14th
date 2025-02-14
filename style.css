@@ -147,11 +147,26 @@ button {
     transform: scale(0.98);
     border-radius: 20px;
    }
+   .card-h1{
+    display: none;
+    margin-left: 20%;
 
+   }
    .card:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
    }
+   .card:hover .card-h1{
+    display: block;
+   }
 
+   .missed-me-img{
+    object-fit:scale-down;
+    height: 5%;
+    width: 50%;
+    filter: blur(10px);
+    opacity: 0;
+    transition: filter 0.2s ease-out, opacity 0.2s ease-out;
+   }
 
 
 .box{
@@ -239,7 +254,7 @@ button {
     position: relative;
     width: max(200px, 100vw);
     height: 100px;
-    background-image: linear-gradient(to left, green black aqua);
+    background-image: linear-gradient(to left, green rgb(176, 21, 21) aqua);
     overflow: hidden; /* Ensures moving-box doesn't overflow */
     z-index: 5;
   }
@@ -273,9 +288,10 @@ button {
   }
 .dip-n-me-container{
  display: flex;
+ align-items: space-between;
 margin-top: 8%;
 height: 60vh;
-width: calc(50%);
+
 object-fit: contain;
 background: linear-gradient(45deg, #c13399, #ac28be);
 }
@@ -307,6 +323,7 @@ position: sticky;
 right: 5%;
 background-color: #ff0b0b;
 border-radius: 10% 15%;
+transition: 2s ease-in-out;
 }
 .scroll-down:hover{
 background-color: yellow;
@@ -325,4 +342,68 @@ bottom: 5%;
 #icon{
   height:70%;
   width: 60%;
+}
+
+.customise-h2{
+  margin-left:  50%;
+}
+#no-btn{
+transition: ease-in 2;
+}
+#no-btn:hover{
+
+ transform: scale(0,0);
+}
+.video-div{
+
+  width: min(75%,4000px,2800px);
+  height: 70vh;
+}
+.video{
+  height: 100%;
+  width: 100%;
+}
+
+
+.valentine-text {
+  font-size: 7vw; /* 70% of screen width */
+  font-weight: bold;
+  color: pink;
+  text-shadow: 0px 0px 20px rgba(255, 105, 180, 0.8);
+  position: absolute;
+  top: -100px; /* Start from above the screen */
+  opacity: 0;
+  animation: dropText 2s ease-out forwards;
+}
+
+@keyframes dropText {
+  0% {
+      top: -100px;
+      opacity: 0;
+  }
+  70% {
+      top: 50%;
+      opacity: 0.55;
+  }
+  100% {
+      top: 80%;
+      opacity: 1;
+  }
+}
+
+.leaf {
+  position: absolute;
+  top: -50px;
+  font-size: 40px; /* Adjust size of the leaf */
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+      transform: translateY(0) rotate(0deg);
+  }
+  100% {
+      transform: translateY(100vh) rotate(360deg);
+  }
 }
