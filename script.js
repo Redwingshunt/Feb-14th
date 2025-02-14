@@ -80,3 +80,15 @@ setTimeout(() =>{window.location.href="./Customize.html"}, 1000);
             setTimeout(() => { leaf.remove(); }, randomDuration * 1000);
         }
     }
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.querySelector(".audio");
+
+        function playAudio() {
+            audio.play().catch(error => console.log("Autoplay blocked:", error));
+            document.removeEventListener("click", playAudio); // Remove event listener after first interaction
+        }
+
+        document.addEventListener("click", playAudio);
+    });
