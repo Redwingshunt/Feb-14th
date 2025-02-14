@@ -61,6 +61,10 @@ setTimeout(() =>{window.location.href="./Customize.html"}, 1000);
         let audio = new Audio("./music/Glass Animals - Heat Waves (FarFlow Bootleg).wav"); // Replace with your audio file
         audio.play();
     }
+  function music() {
+        let audio = new Audio("./music/beautiful-loop-253269.mp3"); // Replace with your audio file
+        audio.play();
+    }
 
     function startFalling() {
         for (let i = 0; i < 20; i++) { // Create 20 leaves
@@ -82,13 +86,13 @@ setTimeout(() =>{window.location.href="./Customize.html"}, 1000);
     }
 
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const audio = document.querySelector(".audio");
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const audio = document.querySelector(".audio");
 
-        function playAudio() {
-            audio.play().catch(error => console.log("Autoplay blocked:", error));
-            document.removeEventListener("click", playAudio); // Remove event listener after first interaction
-        }
+    //     function playAudio() {
+    //         audio.play().catch(error => console.log("Autoplay blocked:", error));
+    //         document.removeEventListener("click", playAudio); // Remove event listener after first interaction
+    //     }
 
-        document.addEventListener("click", playAudio);
-    });
+    //     document.addEventListener("click", playAudio);
+    // });

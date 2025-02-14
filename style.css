@@ -373,6 +373,13 @@ transition: ease-in 2;
   justify-content: space-around;
 
 }
+.music{
+
+  height: 30%;
+  width: 20%;
+  color: aqua;
+  margin-left: 20%;
+}
 
 .valentine-text {
   font-size: 7vw; /* 70% of screen width */
